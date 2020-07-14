@@ -12,6 +12,7 @@
 
 
 //Added imports here
+// Added import "./index.css";
 //
 
 import React, { Component } from "react";
@@ -23,12 +24,16 @@ import {
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
+import "./index.css";
+
 
 // Added calls to HashRouter
 //
 // Replaced links with NavLinks
 //
 // Added routes
+//
+// Added exact attribute to Home router
 //
 
 class Main extends Component {
@@ -43,12 +48,12 @@ class Main extends Component {
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <div className="content">
-            <Route path="/" component={Home}/>
+            <Route exact path="/" component={Home}/>
             <Route path="/stuff" component={Stuff}/>
             <Route path="/contact" component={Contact}/>
           </div>
         </div>
-        <HashRouter>
+        </HashRouter>
     );
   }
 }
