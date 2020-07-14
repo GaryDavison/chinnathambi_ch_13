@@ -6,10 +6,13 @@
 // per https://dev.to/laurieontech/exports-and-imports-and-defaults-oh-my-fa3
 //  See also https://stackoverflow.com/questions/56868946/attempted-import-error-app-is-not-exported-from-app/56868991
 //
+//  Removed "export default" because I realized that I overlooked the
+//  "export default Main;" line at the bottom.  Added it, and problems went away.
+//
 
 import React, { Component } from "react";
 
-export default class Main extends Component {
+class Main extends Component {
   render() {
     return (
         <div>
@@ -26,3 +29,5 @@ export default class Main extends Component {
     );
   }
 }
+
+export default Main;
