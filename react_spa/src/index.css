@@ -36,3 +36,8 @@ ul.header li a {
 .content li {
   margin-bottom: 10px;
 }
+
+/* Added in "Highlighting the Active Link" section */
+.active {
+  background-color: #0099FF;
+}

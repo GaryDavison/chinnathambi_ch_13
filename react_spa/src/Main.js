@@ -15,6 +15,7 @@
 // Added import "./index.css";
 //
 
+
 import React, { Component } from "react";
 import {
   Route,
@@ -33,7 +34,10 @@ import "./index.css";
 //
 // Added routes
 //
-// Added exact attribute to Home router
+// Added exact attribute to Home route
+//
+
+//  Added exact attribute to Home NavLinks
 //
 
 class Main extends Component {
@@ -43,7 +47,7 @@ class Main extends Component {
         <div>
           <h1>Simple SPA</h1>
           <ul className="header">
-            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/stuff">Stuff</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
